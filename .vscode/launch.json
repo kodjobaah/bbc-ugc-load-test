@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+
+    {
+      "name": "Debug CRA Tests",
+      "type": "pwa-node",
+      "request": "launch",
+      "runtimeExecutable": "/Users/kodjo/workspace/afriex-jmeter-testbench/test-admin/node_modules/.bin/react-scripts",
+      "args": ["start"],
+      "cwd": "/Users/kodjo/workspace/afriex-jmeter-testbench/test-admin",
+      "protocol": "inspector",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "env": { "CI": "true" },
+      "disableOptimisticBPs": true
+    }
+
+
+    ]
+
+}

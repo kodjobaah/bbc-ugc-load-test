@@ -1,0 +1,59 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: jmeter-chronograf
+  labels:
+    app: jmeter-chronograf
+spec:
+  ports:
+    - port: 8888
+      targetPort: 8888
+  selector:
+    app: jmeter-chronograf
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: jmeter-chronograf
+  labels:
+    app: jmeter-chronograf
+spec:
+  replicas: 1
+  serviceName: jmeter-chronograf
+  selector:
+    matchLabels:
+      app: jmeter-chronograf
+  template:
+    metadata:
+      labels:
+        app: jmeter-chronograf
+    spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: report
+                operator: In
+                values:
+                - grafana
+      serviceAccountName: afriex-jmeter
+      containers:
+        - image: chronograf
+          imagePullPolicy: IfNotPresent
+          name: chronograf
+          volumeMounts:
+          - name: chronograf-jmeter
+            mountPath: /var/lib/chronograf
+          ports:
+          - containerPort: 8888
+            protocol: TCP
+      restartPolicy: Always
+      securityContext:
+        runAsUser: 472
+        fsGroup: 472
+      volumes:
+       - name: chronograf-jmeter
+         persistentVolumeClaim:
+          claimName: chronograf-jmeter

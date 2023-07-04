@@ -1,0 +1,1 @@
+influx setup --skip-verify --bucket afriex --org afriex.co --username administrator --password administrator --retention 0 

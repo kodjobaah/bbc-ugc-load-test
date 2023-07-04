@@ -1,0 +1,607 @@
+Name:               ip-192-168-34-120.eu-west-3.compute.internal
+Roles:              <none>
+Labels:             alpha.eksctl.io/cluster-name=jmeterstresstest
+                    alpha.eksctl.io/instance-id=i-0c2f258e9d2d7d666
+                    alpha.eksctl.io/nodegroup-name=jmeter-slaves-t2-medium-v2
+                    beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=t2.medium
+                    beta.kubernetes.io/os=linux
+                    failure-domain.beta.kubernetes.io/region=eu-west-3
+                    failure-domain.beta.kubernetes.io/zone=eu-west-3c
+                    jmeter_mode=slaves
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=ip-192-168-34-120.eu-west-3.compute.internal
+                    kubernetes.io/os=linux
+                    node-lifecycle=on-demand
+                    node.kubernetes.io/instance-type=t2.medium
+                    topology.kubernetes.io/region=eu-west-3
+                    topology.kubernetes.io/zone=eu-west-3c
+Annotations:        node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Fri, 10 Sep 2021 10:40:07 +0100
+Taints:             jmeter_slave=true:NoSchedule
+Unschedulable:      false
+Lease:
+  HolderIdentity:  ip-192-168-34-120.eu-west-3.compute.internal
+  AcquireTime:     <unset>
+  RenewTime:       Mon, 13 Sep 2021 21:16:08 +0100
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Mon, 13 Sep 2021 21:15:58 +0100   Fri, 10 Sep 2021 10:40:06 +0100   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Mon, 13 Sep 2021 21:15:58 +0100   Fri, 10 Sep 2021 10:40:06 +0100   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Mon, 13 Sep 2021 21:15:58 +0100   Fri, 10 Sep 2021 10:40:06 +0100   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Mon, 13 Sep 2021 21:15:58 +0100   Fri, 10 Sep 2021 10:40:37 +0100   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:   192.168.34.120
+  ExternalIP:   54.170.233.223
+  Hostname:     ip-192-168-34-120.eu-west-3.compute.internal
+  InternalDNS:  ip-192-168-34-120.eu-west-3.compute.internal
+  ExternalDNS:  ec2-54-170-233-223.eu-west-3.compute.amazonaws.com
+Capacity:
+  attachable-volumes-aws-ebs:  39
+  cpu:                         2
+  ephemeral-storage:           52416492Ki
+  hugepages-2Mi:               0
+  memory:                      4026680Ki
+  pods:                        17
+Allocatable:
+  attachable-volumes-aws-ebs:  39
+  cpu:                         1930m
+  ephemeral-storage:           47233297124
+  hugepages-2Mi:               0
+  memory:                      3471672Ki
+  pods:                        17
+System Info:
+  Machine ID:                 65fb9e1247844940967b335c35097b27
+  System UUID:                ec2f160b-cbe0-656a-17dd-6b6894c2300f
+  Boot ID:                    a064f8bf-03b1-4cc2-88a8-86d053566a99
+  Kernel Version:             5.4.141-67.229.amzn2.x86_64
+  OS Image:                   Amazon Linux 2
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  docker://19.3.13
+  Kubelet Version:            v1.20.7-eks-135321
+  Kube-Proxy Version:         v1.20.7-eks-135321
+ProviderID:                   aws:///eu-west-3c/i-0c2f258e9d2d7d666
+Non-terminated Pods:          (4 in total)
+  Namespace                   Name                            CPU Requests  CPU Limits   Memory Requests  Memory Limits  Age
+  ---------                   ----                            ------------  ----------   ---------------  -------------  ---
+  ausra2                      jmeter-slave-d5bcbb64d-s6w8h    1500m (77%)   1500m (77%)  1054Mi (31%)     1054Mi (31%)   10h
+  kube-system                 aws-node-8tfqn                  10m (0%)      0 (0%)       0 (0%)           0 (0%)         3d10h
+  kube-system                 kube-proxy-hjtrq                100m (5%)     0 (0%)       0 (0%)           0 (0%)         3d10h
+  weave                       weave-scope-agent-mdsrp         100m (5%)     0 (0%)       100Mi (2%)       2000Mi (58%)   3d6h
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource                    Requests      Limits
+  --------                    --------      ------
+  cpu                         1710m (88%)   1500m (77%)
+  memory                      1154Mi (34%)  3054Mi (90%)
+  ephemeral-storage           0 (0%)        0 (0%)
+  hugepages-2Mi               0 (0%)        0 (0%)
+  attachable-volumes-aws-ebs  0             0
+Events:                       <none>
+
+
+Name:               ip-192-168-35-166.eu-west-3.compute.internal
+Roles:              <none>
+Labels:             alpha.eksctl.io/cluster-name=jmeterstresstest
+                    alpha.eksctl.io/instance-id=i-03cefb9112abad710
+                    alpha.eksctl.io/nodegroup-name=jmeter-master-v2
+                    beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=t2.small
+                    beta.kubernetes.io/os=linux
+                    failure-domain.beta.kubernetes.io/region=eu-west-3
+                    failure-domain.beta.kubernetes.io/zone=eu-west-3c
+                    jmeter_mode=master
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=ip-192-168-35-166.eu-west-3.compute.internal
+                    kubernetes.io/os=linux
+                    node-lifecycle=on-demand
+                    node.kubernetes.io/instance-type=t2.small
+                    topology.kubernetes.io/region=eu-west-3
+                    topology.kubernetes.io/zone=eu-west-3c
+Annotations:        node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Fri, 10 Sep 2021 10:41:28 +0100
+Taints:             jmeter_master=true:NoSchedule
+Unschedulable:      false
+Lease:
+  HolderIdentity:  ip-192-168-35-166.eu-west-3.compute.internal
+  AcquireTime:     <unset>
+  RenewTime:       Mon, 13 Sep 2021 21:16:08 +0100
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Mon, 13 Sep 2021 21:11:47 +0100   Fri, 10 Sep 2021 10:41:28 +0100   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Mon, 13 Sep 2021 21:11:47 +0100   Fri, 10 Sep 2021 10:41:28 +0100   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Mon, 13 Sep 2021 21:11:47 +0100   Fri, 10 Sep 2021 10:41:28 +0100   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Mon, 13 Sep 2021 21:11:47 +0100   Fri, 10 Sep 2021 10:42:29 +0100   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:   192.168.35.166
+  ExternalIP:   34.247.48.61
+  Hostname:     ip-192-168-35-166.eu-west-3.compute.internal
+  InternalDNS:  ip-192-168-35-166.eu-west-3.compute.internal
+  ExternalDNS:  ec2-34-247-48-61.eu-west-3.compute.amazonaws.com
+Capacity:
+  attachable-volumes-aws-ebs:  39
+  cpu:                         1
+  ephemeral-storage:           52416492Ki
+  hugepages-2Mi:               0
+  memory:                      2031268Ki
+  pods:                        11
+Allocatable:
+  attachable-volumes-aws-ebs:  39
+  cpu:                         940m
+  ephemeral-storage:           47233297124
+  hugepages-2Mi:               0
+  memory:                      1543844Ki
+  pods:                        11
+System Info:
+  Machine ID:                 4fcbc550443c4820a5778ba739e83389
+  System UUID:                ec261ef7-60e7-89ad-0036-d48c9214ec10
+  Boot ID:                    288f19a7-45e6-4eb2-84e3-5741d6f06d22
+  Kernel Version:             5.4.141-67.229.amzn2.x86_64
+  OS Image:                   Amazon Linux 2
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  docker://19.3.13
+  Kubelet Version:            v1.20.7-eks-135321
+  Kube-Proxy Version:         v1.20.7-eks-135321
+ProviderID:                   aws:///eu-west-3c/i-03cefb9112abad710
+Non-terminated Pods:          (6 in total)
+  Namespace                   Name                              CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                              ------------  ----------  ---------------  -------------  ---
+  ausra2                      jmeter-master-74d47f98dc-4pbnk    0 (0%)        0 (0%)      0 (0%)           0 (0%)         10h
+  ausra3                      jmeter-master-74d47f98dc-f4kkd    0 (0%)        0 (0%)      0 (0%)           0 (0%)         9h
+  kube-system                 aws-node-gc26x                    10m (1%)      0 (0%)      0 (0%)           0 (0%)         3d10h
+  kube-system                 kube-proxy-jdxdg                  100m (10%)    0 (0%)      0 (0%)           0 (0%)         3d10h
+  ne3                         jmeter-master-74d47f98dc-b8vbh    0 (0%)        0 (0%)      0 (0%)           0 (0%)         99m
+  weave                       weave-scope-agent-ljj28           100m (10%)    0 (0%)      100Mi (6%)       2000Mi (132%)  3d6h
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource                    Requests    Limits
+  --------                    --------    ------
+  cpu                         210m (22%)  0 (0%)
+  memory                      100Mi (6%)  2000Mi (132%)
+  ephemeral-storage           0 (0%)      0 (0%)
+  hugepages-2Mi               0 (0%)      0 (0%)
+  attachable-volumes-aws-ebs  0           0
+Events:                       <none>
+
+
+Name:               ip-192-168-51-78.eu-west-3.compute.internal
+Roles:              <none>
+Labels:             alpha.eksctl.io/cluster-name=jmeterstresstest
+                    alpha.eksctl.io/instance-id=i-0ffa92bb82d8b34ed
+                    alpha.eksctl.io/nodegroup-name=admin-controller-v4
+                    beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=t2.micro
+                    beta.kubernetes.io/os=linux
+                    control=admin
+                    failure-domain.beta.kubernetes.io/region=eu-west-3
+                    failure-domain.beta.kubernetes.io/zone=eu-west-3c
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=ip-192-168-51-78.eu-west-3.compute.internal
+                    kubernetes.io/os=linux
+                    node-lifecycle=on-demand
+                    node.kubernetes.io/instance-type=t2.micro
+                    topology.kubernetes.io/region=eu-west-3
+                    topology.kubernetes.io/zone=eu-west-3c
+Annotations:        node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Fri, 10 Sep 2021 10:44:44 +0100
+Taints:             node.kubernetes.io/unreachable:NoExecute
+                    admin=true:NoSchedule
+                    node.kubernetes.io/unreachable:NoSchedule
+Unschedulable:      false
+Lease:
+  HolderIdentity:  ip-192-168-51-78.eu-west-3.compute.internal
+  AcquireTime:     <unset>
+  RenewTime:       Mon, 13 Sep 2021 20:55:44 +0100
+Conditions:
+  Type             Status    LastHeartbeatTime                 LastTransitionTime                Reason              Message
+  ----             ------    -----------------                 ------------------                ------              -------
+  MemoryPressure   Unknown   Mon, 13 Sep 2021 20:52:31 +0100   Mon, 13 Sep 2021 20:56:25 +0100   NodeStatusUnknown   Kubelet stopped posting node status.
+  DiskPressure     Unknown   Mon, 13 Sep 2021 20:52:31 +0100   Mon, 13 Sep 2021 20:56:25 +0100   NodeStatusUnknown   Kubelet stopped posting node status.
+  PIDPressure      Unknown   Mon, 13 Sep 2021 20:52:31 +0100   Mon, 13 Sep 2021 20:56:25 +0100   NodeStatusUnknown   Kubelet stopped posting node status.
+  Ready            Unknown   Mon, 13 Sep 2021 20:52:31 +0100   Mon, 13 Sep 2021 20:56:25 +0100   NodeStatusUnknown   Kubelet stopped posting node status.
+Addresses:
+  InternalIP:   192.168.51.78
+  ExternalIP:   3.249.250.43
+  Hostname:     ip-192-168-51-78.eu-west-3.compute.internal
+  InternalDNS:  ip-192-168-51-78.eu-west-3.compute.internal
+  ExternalDNS:  ec2-3-249-250-43.eu-west-3.compute.amazonaws.com
+Capacity:
+  attachable-volumes-aws-ebs:  39
+  cpu:                         1
+  ephemeral-storage:           52416492Ki
+  hugepages-2Mi:               0
+  memory:                      1000612Ki
+  pods:                        4
+Allocatable:
+  attachable-volumes-aws-ebs:  39
+  cpu:                         940m
+  ephemeral-storage:           47233297124
+  hugepages-2Mi:               0
+  memory:                      592036Ki
+  pods:                        4
+System Info:
+  Machine ID:                 934171c946c54dee80d672eb52b90b41
+  System UUID:                ec29ed71-0c7e-07be-a9b2-4baa2b114bb3
+  Boot ID:                    d2c3d391-0a2a-4b6b-8ba5-61640808faa6
+  Kernel Version:             5.4.141-67.229.amzn2.x86_64
+  OS Image:                   Amazon Linux 2
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  docker://19.3.13
+  Kubelet Version:            v1.20.7-eks-135321
+  Kube-Proxy Version:         v1.20.7-eks-135321
+ProviderID:                   aws:///eu-west-3c/i-0ffa92bb82d8b34ed
+Non-terminated Pods:          (3 in total)
+  Namespace                   Name                       CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                       ------------  ----------  ---------------  -------------  ---
+  kube-system                 aws-node-c68dl             10m (1%)      0 (0%)      0 (0%)           0 (0%)         3d10h
+  kube-system                 kube-proxy-vntwm           100m (10%)    0 (0%)      0 (0%)           0 (0%)         3d10h
+  weave                       weave-scope-agent-h92nw    100m (10%)    0 (0%)      100Mi (17%)      2000Mi (345%)  3d6h
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource                    Requests     Limits
+  --------                    --------     ------
+  cpu                         210m (22%)   0 (0%)
+  memory                      100Mi (17%)  2000Mi (345%)
+  ephemeral-storage           0 (0%)       0 (0%)
+  hugepages-2Mi               0 (0%)       0 (0%)
+  attachable-volumes-aws-ebs  0            0
+Events:                       <none>
+
+
+Name:               ip-192-168-55-193.eu-west-3.compute.internal
+Roles:              <none>
+Labels:             alpha.eksctl.io/cluster-name=jmeterstresstest
+                    alpha.eksctl.io/instance-id=i-04b2769b13a82ce2c
+                    alpha.eksctl.io/nodegroup-name=management
+                    beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=t2.medium
+                    beta.kubernetes.io/os=linux
+                    failure-domain.beta.kubernetes.io/region=eu-west-3
+                    failure-domain.beta.kubernetes.io/zone=eu-west-3c
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=ip-192-168-55-193.eu-west-3.compute.internal
+                    kubernetes.io/os=linux
+                    management=admin
+                    node-lifecycle=on-demand
+                    node.kubernetes.io/instance-type=t2.medium
+                    topology.ebs.csi.aws.com/zone=eu-west-3c
+                    topology.kubernetes.io/region=eu-west-3
+                    topology.kubernetes.io/zone=eu-west-3c
+Annotations:        csi.volume.kubernetes.io/nodeid: {"ebs.csi.aws.com":"i-04b2769b13a82ce2c"}
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Fri, 10 Sep 2021 10:45:50 +0100
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  ip-192-168-55-193.eu-west-3.compute.internal
+  AcquireTime:     <unset>
+  RenewTime:       Mon, 13 Sep 2021 21:16:08 +0100
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Mon, 13 Sep 2021 21:13:56 +0100   Fri, 10 Sep 2021 10:45:49 +0100   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Mon, 13 Sep 2021 21:13:56 +0100   Fri, 10 Sep 2021 10:45:49 +0100   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Mon, 13 Sep 2021 21:13:56 +0100   Fri, 10 Sep 2021 10:45:49 +0100   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Mon, 13 Sep 2021 21:13:56 +0100   Fri, 10 Sep 2021 10:46:40 +0100   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:   192.168.55.193
+  ExternalIP:   34.250.149.132
+  Hostname:     ip-192-168-55-193.eu-west-3.compute.internal
+  InternalDNS:  ip-192-168-55-193.eu-west-3.compute.internal
+  ExternalDNS:  ec2-34-250-149-132.eu-west-3.compute.amazonaws.com
+Capacity:
+  attachable-volumes-aws-ebs:  39
+  cpu:                         2
+  ephemeral-storage:           52416492Ki
+  hugepages-2Mi:               0
+  memory:                      4026680Ki
+  pods:                        17
+Allocatable:
+  attachable-volumes-aws-ebs:  39
+  cpu:                         1930m
+  ephemeral-storage:           47233297124
+  hugepages-2Mi:               0
+  memory:                      3471672Ki
+  pods:                        17
+System Info:
+  Machine ID:                 074ab0f5adc54db4a2060933451553ad
+  System UUID:                ec28bbab-f9ea-7b8d-47ab-c2bbdc6fe9fb
+  Boot ID:                    97643e79-d885-453f-92ed-e1c0beae39eb
+  Kernel Version:             5.4.141-67.229.amzn2.x86_64
+  OS Image:                   Amazon Linux 2
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  docker://19.3.13
+  Kubelet Version:            v1.20.7-eks-135321
+  Kube-Proxy Version:         v1.20.7-eks-135321
+ProviderID:                   aws:///eu-west-3c/i-04b2769b13a82ce2c
+Non-terminated Pods:          (13 in total)
+  Namespace                   Name                                          CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                                          ------------  ----------  ---------------  -------------  ---
+  control                     admin-7769d595f8-hwv4k                        0 (0%)        0 (0%)      0 (0%)           0 (0%)         2m11s
+  kube-system                 aws-node-r5cnn                                10m (0%)      0 (0%)      0 (0%)           0 (0%)         3d10h
+  kube-system                 coredns-6b86db5c6c-kqvm8                      100m (5%)     0 (0%)      70Mi (2%)        170Mi (5%)     3d10h
+  kube-system                 coredns-6b86db5c6c-pwq5h                      100m (5%)     0 (0%)      70Mi (2%)        170Mi (5%)     3d10h
+  kube-system                 ebs-csi-controller-6bffc89d75-9kztl           0 (0%)        0 (0%)      0 (0%)           0 (0%)         3d10h
+  kube-system                 ebs-csi-controller-6bffc89d75-lb99j           0 (0%)        0 (0%)      0 (0%)           0 (0%)         3d10h
+  kube-system                 ebs-csi-node-djztq                            0 (0%)        0 (0%)      0 (0%)           0 (0%)         3d10h
+  kube-system                 ksync-j48xq                                   0 (0%)        0 (0%)      0 (0%)           0 (0%)         31h
+  kube-system                 kube-proxy-wsj2x                              100m (5%)     0 (0%)      0 (0%)           0 (0%)         3d10h
+  kube-system                 metrics-server-9f459d97b-sd5dp                100m (5%)     0 (0%)      200Mi (5%)       0 (0%)         3d6h
+  weave                       weave-scope-agent-5bqtv                       100m (5%)     0 (0%)      100Mi (2%)       2000Mi (58%)   3d6h
+  weave                       weave-scope-app-5f9f566559-px2w7              0 (0%)        0 (0%)      0 (0%)           0 (0%)         3d6h
+  weave                       weave-scope-cluster-agent-6b6f974dc6-n59s6    25m (1%)      0 (0%)      80Mi (2%)        2000Mi (58%)   3d6h
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource                    Requests     Limits
+  --------                    --------     ------
+  cpu                         535m (27%)   0 (0%)
+  memory                      520Mi (15%)  4340Mi (128%)
+  ephemeral-storage           0 (0%)       0 (0%)
+  hugepages-2Mi               0 (0%)       0 (0%)
+  attachable-volumes-aws-ebs  0            0
+Events:                       <none>
+
+
+Name:               ip-192-168-64-197.eu-west-3.compute.internal
+Roles:              <none>
+Labels:             alpha.eksctl.io/cluster-name=jmeterstresstest
+                    alpha.eksctl.io/instance-id=i-07c409883bdec46a2
+                    alpha.eksctl.io/nodegroup-name=grafana-v5
+                    beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=t2.micro
+                    beta.kubernetes.io/os=linux
+                    failure-domain.beta.kubernetes.io/region=eu-west-3
+                    failure-domain.beta.kubernetes.io/zone=eu-west-3a
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=ip-192-168-64-197.eu-west-3.compute.internal
+                    kubernetes.io/os=linux
+                    node-lifecycle=on-demand
+                    node.kubernetes.io/instance-type=t2.micro
+                    report=grafana
+                    topology.kubernetes.io/region=eu-west-3
+                    topology.kubernetes.io/zone=eu-west-3a
+Annotations:        node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Fri, 10 Sep 2021 10:42:33 +0100
+Taints:             grafana=true:NoSchedule
+Unschedulable:      false
+Lease:
+  HolderIdentity:  ip-192-168-64-197.eu-west-3.compute.internal
+  AcquireTime:     <unset>
+  RenewTime:       Mon, 13 Sep 2021 21:16:17 +0100
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Mon, 13 Sep 2021 21:12:57 +0100   Fri, 10 Sep 2021 10:42:33 +0100   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Mon, 13 Sep 2021 21:12:57 +0100   Fri, 10 Sep 2021 10:42:33 +0100   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Mon, 13 Sep 2021 21:12:57 +0100   Fri, 10 Sep 2021 10:42:33 +0100   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Mon, 13 Sep 2021 21:12:57 +0100   Fri, 10 Sep 2021 10:43:34 +0100   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:   192.168.64.197
+  ExternalIP:   52.215.63.243
+  Hostname:     ip-192-168-64-197.eu-west-3.compute.internal
+  InternalDNS:  ip-192-168-64-197.eu-west-3.compute.internal
+  ExternalDNS:  ec2-52-215-63-243.eu-west-3.compute.amazonaws.com
+Capacity:
+  attachable-volumes-aws-ebs:  39
+  cpu:                         1
+  ephemeral-storage:           52416492Ki
+  hugepages-2Mi:               0
+  memory:                      1000612Ki
+  pods:                        4
+Allocatable:
+  attachable-volumes-aws-ebs:  39
+  cpu:                         940m
+  ephemeral-storage:           47233297124
+  hugepages-2Mi:               0
+  memory:                      592036Ki
+  pods:                        4
+System Info:
+  Machine ID:                 bf4f6618f93b4282876b84b6eb1f51e9
+  System UUID:                ec2bd8f8-03f8-7755-30d6-54be4f8f2b69
+  Boot ID:                    60637049-56ed-4480-8a4c-473354942912
+  Kernel Version:             5.4.141-67.229.amzn2.x86_64
+  OS Image:                   Amazon Linux 2
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  docker://19.3.13
+  Kubelet Version:            v1.20.7-eks-135321
+  Kube-Proxy Version:         v1.20.7-eks-135321
+ProviderID:                   aws:///eu-west-3a/i-07c409883bdec46a2
+Non-terminated Pods:          (4 in total)
+  Namespace                   Name                       CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                       ------------  ----------  ---------------  -------------  ---
+  kube-system                 aws-node-dp5z6             10m (1%)      0 (0%)      0 (0%)           0 (0%)         3d10h
+  kube-system                 kube-proxy-2mz7p           100m (10%)    0 (0%)      0 (0%)           0 (0%)         3d10h
+  weave                       weave-scope-agent-49z2s    100m (10%)    0 (0%)      100Mi (17%)      2000Mi (345%)  3d6h
+  afriex-reporter              jmeter-chronograf-0        0 (0%)        0 (0%)      0 (0%)           0 (0%)         2d4h
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource                    Requests     Limits
+  --------                    --------     ------
+  cpu                         210m (22%)   0 (0%)
+  memory                      100Mi (17%)  2000Mi (345%)
+  ephemeral-storage           0 (0%)       0 (0%)
+  hugepages-2Mi               0 (0%)       0 (0%)
+  attachable-volumes-aws-ebs  0            0
+Events:                       <none>
+
+
+Name:               ip-192-168-65-138.eu-west-3.compute.internal
+Roles:              <none>
+Labels:             alpha.eksctl.io/cluster-name=jmeterstresstest
+                    alpha.eksctl.io/instance-id=i-09ab0097cec5767e8
+                    alpha.eksctl.io/nodegroup-name=influxdb-v2
+                    beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=t2.micro
+                    beta.kubernetes.io/os=linux
+                    failure-domain.beta.kubernetes.io/region=eu-west-3
+                    failure-domain.beta.kubernetes.io/zone=eu-west-3a
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=ip-192-168-65-138.eu-west-3.compute.internal
+                    kubernetes.io/os=linux
+                    node-lifecycle=on-demand
+                    node.kubernetes.io/instance-type=t2.micro
+                    report=influxdb
+                    topology.kubernetes.io/region=eu-west-3
+                    topology.kubernetes.io/zone=eu-west-3a
+Annotations:        node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Fri, 10 Sep 2021 10:43:38 +0100
+Taints:             influxdb=true:NoSchedule
+Unschedulable:      false
+Lease:
+  HolderIdentity:  ip-192-168-65-138.eu-west-3.compute.internal
+  AcquireTime:     <unset>
+  RenewTime:       Mon, 13 Sep 2021 21:16:17 +0100
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Mon, 13 Sep 2021 21:11:16 +0100   Fri, 10 Sep 2021 10:43:38 +0100   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Mon, 13 Sep 2021 21:11:16 +0100   Fri, 10 Sep 2021 10:43:38 +0100   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Mon, 13 Sep 2021 21:11:16 +0100   Fri, 10 Sep 2021 10:43:38 +0100   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Mon, 13 Sep 2021 21:11:16 +0100   Fri, 10 Sep 2021 10:44:39 +0100   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:   192.168.65.138
+  ExternalIP:   34.245.56.64
+  Hostname:     ip-192-168-65-138.eu-west-3.compute.internal
+  InternalDNS:  ip-192-168-65-138.eu-west-3.compute.internal
+  ExternalDNS:  ec2-34-245-56-64.eu-west-3.compute.amazonaws.com
+Capacity:
+  attachable-volumes-aws-ebs:  39
+  cpu:                         1
+  ephemeral-storage:           52416492Ki
+  hugepages-2Mi:               0
+  memory:                      1000612Ki
+  pods:                        4
+Allocatable:
+  attachable-volumes-aws-ebs:  39
+  cpu:                         940m
+  ephemeral-storage:           47233297124
+  hugepages-2Mi:               0
+  memory:                      592036Ki
+  pods:                        4
+System Info:
+  Machine ID:                 77856408bc4d4c55b5c917e2d500ed8b
+  System UUID:                ec2e2905-e073-6cf3-7443-3959918a8a70
+  Boot ID:                    60bc36f2-a59c-43a9-96d1-54cacd7d42b1
+  Kernel Version:             5.4.141-67.229.amzn2.x86_64
+  OS Image:                   Amazon Linux 2
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  docker://19.3.13
+  Kubelet Version:            v1.20.7-eks-135321
+  Kube-Proxy Version:         v1.20.7-eks-135321
+ProviderID:                   aws:///eu-west-3a/i-09ab0097cec5767e8
+Non-terminated Pods:          (4 in total)
+  Namespace                   Name                       CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                       ------------  ----------  ---------------  -------------  ---
+  kube-system                 aws-node-j7ljm             10m (1%)      0 (0%)      0 (0%)           0 (0%)         3d10h
+  kube-system                 kube-proxy-9l7g8           100m (10%)    0 (0%)      0 (0%)           0 (0%)         3d10h
+  weave                       weave-scope-agent-5fhvb    100m (10%)    0 (0%)      100Mi (17%)      2000Mi (345%)  3d6h
+  afriex-reporter              influxdb-jmeter-0          0 (0%)        0 (0%)      0 (0%)           0 (0%)         2d1h
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource                    Requests     Limits
+  --------                    --------     ------
+  cpu                         210m (22%)   0 (0%)
+  memory                      100Mi (17%)  2000Mi (345%)
+  ephemeral-storage           0 (0%)       0 (0%)
+  hugepages-2Mi               0 (0%)       0 (0%)
+  attachable-volumes-aws-ebs  0            0
+Events:                       <none>
+
+
+Name:               ip-192-168-85-132.eu-west-3.compute.internal
+Roles:              <none>
+Labels:             alpha.eksctl.io/cluster-name=jmeterstresstest
+                    alpha.eksctl.io/instance-id=i-0003b100e537f7fc3
+                    alpha.eksctl.io/nodegroup-name=jmeter-slaves-t2-medium-v2
+                    beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=t2.medium
+                    beta.kubernetes.io/os=linux
+                    failure-domain.beta.kubernetes.io/region=eu-west-3
+                    failure-domain.beta.kubernetes.io/zone=eu-west-3a
+                    jmeter_mode=slaves
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=ip-192-168-85-132.eu-west-3.compute.internal
+                    kubernetes.io/os=linux
+                    node-lifecycle=on-demand
+                    node.kubernetes.io/instance-type=t2.medium
+                    topology.kubernetes.io/region=eu-west-3
+                    topology.kubernetes.io/zone=eu-west-3a
+Annotations:        node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Fri, 10 Sep 2021 10:40:04 +0100
+Taints:             jmeter_slave=true:NoSchedule
+Unschedulable:      false
+Lease:
+  HolderIdentity:  ip-192-168-85-132.eu-west-3.compute.internal
+  AcquireTime:     <unset>
+  RenewTime:       Mon, 13 Sep 2021 21:16:17 +0100
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Mon, 13 Sep 2021 21:13:27 +0100   Fri, 10 Sep 2021 10:40:04 +0100   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Mon, 13 Sep 2021 21:13:27 +0100   Fri, 10 Sep 2021 10:40:04 +0100   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Mon, 13 Sep 2021 21:13:27 +0100   Fri, 10 Sep 2021 10:40:04 +0100   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Mon, 13 Sep 2021 21:13:27 +0100   Fri, 10 Sep 2021 10:41:25 +0100   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:   192.168.85.132
+  ExternalIP:   34.250.88.22
+  Hostname:     ip-192-168-85-132.eu-west-3.compute.internal
+  InternalDNS:  ip-192-168-85-132.eu-west-3.compute.internal
+  ExternalDNS:  ec2-34-250-88-22.eu-west-3.compute.amazonaws.com
+Capacity:
+  attachable-volumes-aws-ebs:  39
+  cpu:                         2
+  ephemeral-storage:           52416492Ki
+  hugepages-2Mi:               0
+  memory:                      4026680Ki
+  pods:                        17
+Allocatable:
+  attachable-volumes-aws-ebs:  39
+  cpu:                         1930m
+  ephemeral-storage:           47233297124
+  hugepages-2Mi:               0
+  memory:                      3471672Ki
+  pods:                        17
+System Info:
+  Machine ID:                 d94e0258ffc4445f88b2a4a79b8d4945
+  System UUID:                ec203bf9-23d9-4006-99c4-89f61cd9fff3
+  Boot ID:                    693a79f4-355b-4130-a678-60fe082ed275
+  Kernel Version:             5.4.141-67.229.amzn2.x86_64
+  OS Image:                   Amazon Linux 2
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  docker://19.3.13
+  Kubelet Version:            v1.20.7-eks-135321
+  Kube-Proxy Version:         v1.20.7-eks-135321
+ProviderID:                   aws:///eu-west-3a/i-0003b100e537f7fc3
+Non-terminated Pods:          (4 in total)
+  Namespace                   Name                             CPU Requests  CPU Limits   Memory Requests  Memory Limits  Age
+  ---------                   ----                             ------------  ----------   ---------------  -------------  ---
+  ausra3                      jmeter-slave-6fb5fb8f55-9strg    1500m (77%)   1500m (77%)  1054Mi (31%)     1054Mi (31%)   9h
+  kube-system                 aws-node-qbcf4                   10m (0%)      0 (0%)       0 (0%)           0 (0%)         3d10h
+  kube-system                 kube-proxy-5rc47                 100m (5%)     0 (0%)       0 (0%)           0 (0%)         3d10h
+  weave                       weave-scope-agent-jhtl7          100m (5%)     0 (0%)       100Mi (2%)       2000Mi (58%)   3d6h
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource                    Requests      Limits
+  --------                    --------      ------
+  cpu                         1710m (88%)   1500m (77%)
+  memory                      1154Mi (34%)  3054Mi (90%)
+  ephemeral-storage           0 (0%)        0 (0%)
+  hugepages-2Mi               0 (0%)        0 (0%)
+  attachable-volumes-aws-ebs  0             0
+Events:                       <none>

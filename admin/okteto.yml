@@ -1,0 +1,16 @@
+name: admin
+autocreate: true
+image: okteto/golang:1
+command: bash
+securityContext:
+  capabilities:
+    add:
+    - SYS_PTRACE
+volumes:
+- /go/pkg/
+- /root/.cache/go-build/
+sync:
+- .:/home/control/admin
+forward:
+- 1323:1323
+

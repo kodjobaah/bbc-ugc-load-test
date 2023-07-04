@@ -1,0 +1,62 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: admin-controller
+  labels:
+    control: admin
+  namespace: "control"
+  annotations:
+    # for creating record-set
+    external-dns.alpha.kubernetes.io/hostname: jmeter.afriexdev.com 
+        # Note that the backend talks over HTTP.
+    service.beta.kubernetes.io/aws-load-balancer-backend-protocol: http
+    # TODO: Fill in with the ARN of your certificate.
+    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:acm:us-east-1:625194385885:certificate/80351474-e7c5-4127-9aa1-7766a4facc08
+    # Only run SSL on the port named "https" below.
+    service.beta.kubernetes.io/aws-load-balancer-ssl-ports: "https"
+spec:
+  ports:
+    - name: ssh
+      port: 22
+      targetPort: 22
+    - name: weavescope
+      port: 4040
+      targetPort: 4040
+    - name: admin
+      port: 1323
+      targetPort: 1323
+    - name: report
+      port: 80
+      targetPort: 80
+    - name: redis
+      port: 6379
+      targetPort: redis
+  selector:
+    control: admin
+  externalTrafficPolicy: Local
+  type: LoadBalancer
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: admin-controller
+  labels:
+    control: admin
+
+spec:
+  nodeSelector:
+    control: admin
+  serviceAccountName: afriex-control
+  securityContext:
+      fsGroup: 1000
+  containers:
+  - name: control
+    image: 625194385885.dkr.ecr.eu-west-3.amazonaws.com/jmeterstresstest/control:latest
+    imagePullPolicy: Always
+    args: [ "/bin/bash", "-c", "--", "while true; do sleep 30; done;" ]
+    ports:
+    - containerPort: 60000
+    securityContext:
+      "privileged": true
+      runAsUser: 1000
+      runAsGroup: 1000

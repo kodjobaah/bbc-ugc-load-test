@@ -1,0 +1,2 @@
+Type,SKU,Product name,Availability,Enabled,Price,Short description,Long description,Maximum order quantity,Image url,Show when out of stock,Category,Shelf,Sub Shelf,Position,Exclude from promo,Country
+CREATE,__AUTOGENERATE__,PRODUCT Name-gQLDQlY4,E10,true,74,Short description,Long description,85,https://i.ibb.co/NtCFR8V/Nap-Chickpeas.png,true,meat,afriex_favourites432,Sub Shelf,467989046,Exclude from promo,GB

@@ -1,0 +1,70 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: influxdb-jmeter
+  labels:
+    app: influxdb-jmeter
+spec:
+  ports:
+    - port: 8086
+      name: api
+      targetPort: 8086
+  selector:
+    app: influxdb-jmeter
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: influxdb-jmeter
+  labels:
+    app: influxdb-jmeter
+spec:
+  replicas: 1
+  serviceName: influxdb-jmeter
+  selector:
+    matchLabels:
+      app: influxdb-jmeter
+  template:
+    metadata:
+      labels:
+        app: influxdb-jmeter
+    spec:
+      serviceAccountName: afriex-jmeter
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                - key: report
+                  operator: In
+                  values:
+                  - influxdb
+      containers:
+        - image: influxdb
+          imagePullPolicy: IfNotPresent
+          name: influxdb
+          volumeMounts:
+            - mountPath: /var/lib/influxdb
+              name: influxdb-jmeter
+            - mountPath: /etc/influxdb/influxdb.conf
+              name: influxdb-config
+              subPath: influxdb.conf
+              readOnly: true
+          ports:
+            - containerPort: 8083
+              protocol: TCP
+              name: influx
+            - containerPort: 8086
+              protocol: TCP
+              name: api
+            - containerPort: 2003
+              protocol: TCP
+              name: graphite
+      volumes:
+      - name: influxdb-config
+        configMap:
+          name: influxdb-config
+      - name: influxdb-jmeter
+        persistentVolumeClaim:
+           claimName: influxdb-jmeter

@@ -1,0 +1,25 @@
+{
+    "method": "GET",
+    "uri": "https://vpc-marketplace-elastic-dev-ndntqmz4563nepivs42w25x2hq.eu-west-3.es.amazonaws.com:443/_cat/indices/order",
+    "port": 443,
+    "headers": {
+        "Host": [
+            "vpc-marketplace-elastic-dev-ndntqmz4563nepivs42w25x2hq.eu-west-3.es.amazonaws.com"
+        ],
+        "Content-Type": [
+            "application/json"
+        ],
+        "Accept": [
+            "application/json"
+        ],
+        "User-Agent": [
+            "elasticsearch-php/7.14.0 (Linux 4.14.252-195.483.amzn2.x86_64; PHP 7.4.26)"
+        ],
+        "x-elastic-client-meta": [
+            "es=7.14.0,php=7.4.26,t=7.14.0,a=0,cu=7.74.0"
+        ]
+    },
+    "HTTP code": 404,
+    "duration": 0.044765,
+    "error": "{\"error\":{\"root_cause\":[{\"type\":\"index_not_found_exception\",\"reason\":\"no such index [order]\",\"index_uuid\":\"_na_\",\"resource.type\":\"index_or_alias\",\"resource.id\":\"order\",\"index\":\"order\"}],\"type\":\"index_not_found_exception\",\"reason\":\"no such index [order]\",\"index_uuid\":\"_na_\",\"resource.type\":\"index_or_alias\",\"resource.id\":\"order\",\"index\":\"order\"},\"status\":404}"
+} 

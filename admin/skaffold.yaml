@@ -1,0 +1,16 @@
+apiVersion: skaffold/v2beta22
+kind: Config
+metadata:
+  name: admin
+build:
+  artifacts:
+  - image: 625194385885.dkr.ecr.eu-west-3.amazonaws.com/jmeterstresstest/control
+    context: .
+    sync:
+      manual:
+        - src: '**/*'
+          dest: /home/control/admin
+deploy:
+  kubectl:
+    manifests:
+    - control.yaml

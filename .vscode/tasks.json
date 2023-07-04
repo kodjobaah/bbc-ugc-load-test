@@ -1,0 +1,17 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "bridge-to-kubernetes.resource",
+			"type": "bridge-to-kubernetes.resource",
+			"resource": "admin-controller",
+			"resourceType": "service",
+			"ports": [
+				1323
+			],
+			"targetCluster": "arn:aws:eks:eu-west-3:625194385885:cluster/jmeterstresstest",
+			"targetNamespace": "control",
+			"useKubernetesServiceEnvironmentVariables": false
+		}
+	]
+}

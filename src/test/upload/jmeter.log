@@ -1,0 +1,187 @@
+2021-09-05 12:43:57,978 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2021-09-05 12:43:57,990 INFO o.a.j.JMeter: Loading user properties from: /opt/homebrew/Cellar/jmeter/5.4.1/libexec/bin/user.properties
+2021-09-05 12:43:57,990 INFO o.a.j.JMeter: Loading system properties from: /opt/homebrew/Cellar/jmeter/5.4.1/libexec/bin/system.properties
+2021-09-05 12:43:57,993 INFO o.a.j.JMeter: Copyright (c) 1998-2021 The Apache Software Foundation
+2021-09-05 12:43:57,993 INFO o.a.j.JMeter: Version 5.4.1
+2021-09-05 12:43:57,993 INFO o.a.j.JMeter: java.version=17
+2021-09-05 12:43:57,993 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2021-09-05 12:43:57,993 INFO o.a.j.JMeter: os.name=Mac OS X
+2021-09-05 12:43:57,993 INFO o.a.j.JMeter: os.arch=aarch64
+2021-09-05 12:43:57,993 INFO o.a.j.JMeter: os.version=11.4
+2021-09-05 12:43:57,993 INFO o.a.j.JMeter: file.encoding=UTF-8
+2021-09-05 12:43:57,993 INFO o.a.j.JMeter: java.awt.headless=null
+2021-09-05 12:43:57,993 INFO o.a.j.JMeter: Max memory     =1073741824
+2021-09-05 12:43:57,993 INFO o.a.j.JMeter: Available Processors =8
+2021-09-05 12:43:57,998 INFO o.a.j.JMeter: Default Locale=English (EN)
+2021-09-05 12:43:57,998 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2021-09-05 12:43:57,998 INFO o.a.j.JMeter: JMeterHome=/opt/homebrew/Cellar/jmeter/5.4.1/libexec
+2021-09-05 12:43:57,998 INFO o.a.j.JMeter: user.dir  =/Users/kodjo/workspace/afriex-jmeter-testbench/src/test/upload
+2021-09-05 12:43:57,998 INFO o.a.j.JMeter: PWD       =/Users/kodjo/workspace/afriex-jmeter-testbench/src/test/upload
+2021-09-05 12:43:58,004 INFO o.a.j.JMeter: IP: 192.168.1.57 Name: kodjos-MBP.broadband FullName: kodjos-mbp.broadband
+2021-09-05 12:43:58,194 INFO o.a.j.JMeter: Setting LAF to: laf:com.apple.laf.AquaLookAndFeel
+2021-09-05 12:43:58,915 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2021-09-05 12:43:59,433 INFO o.j.r.JARSourceHTTP: Found cached repo
+2021-09-05 12:43:59,497 INFO o.j.r.PluginManager: Plugins Status: [jpgc-casutg=2.9, jpgc-plugins-manager=1.6, jpgc-csvars=0.1, jmeter-core=5.4.1, jmeter-ftp=5.4.1, jmeter-http=5.4.1, jmeter-jdbc=5.4.1, jmeter-jms=5.4.1, jmeter-junit=5.4.1, jmeter-java=5.4.1, jmeter-ldap=5.4.1, jmeter-mail=5.4.1, jmeter-mongodb=5.4.1, jmeter-native=5.4.1, jmeter-tcp=5.4.1, jmeter-components=5.4.1]
+2021-09-05 12:43:59,560 INFO o.a.j.JMeter: Loading file: /Users/kodjo/workspace/afriex-jmeter-testbench/src/test/upload/upload.jmx
+2021-09-05 12:43:59,561 INFO o.a.j.s.FileServer: Default base='/Users/kodjo/workspace/afriex-jmeter-testbench/src/test/upload'
+2021-09-05 12:43:59,561 INFO o.a.j.s.FileServer: Set new base='/Users/kodjo/workspace/afriex-jmeter-testbench/src/test/upload'
+2021-09-05 12:43:59,629 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2021-09-05 12:43:59,633 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2021-09-05 12:43:59,633 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2021-09-05 12:43:59,634 INFO o.a.j.s.SaveService: Loading file: /Users/kodjo/workspace/afriex-jmeter-testbench/src/test/upload/upload.jmx
+2021-09-05 12:43:59,701 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-09-05 12:43:59,701 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-09-05 12:43:59,701 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-09-05 12:43:59,702 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-09-05 12:43:59,702 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2021-09-05 12:43:59,702 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2021-09-05 12:43:59,708 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2021-09-05 12:43:59,709 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2021-09-05 12:43:59,709 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2021-09-05 12:43:59,709 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2021-09-05 12:43:59,709 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2021-09-05 12:43:59,747 INFO o.a.j.s.FileServer: Set new base='/Users/kodjo/workspace/afriex-jmeter-testbench/src/test/upload'
+2021-09-05 12:43:59,833 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2021-09-05 12:44:00,054 ERROR o.a.j.v.b.BackendListenerGui: Error setting class: 'rocks.nt.apm.jmeter.JMeterInfluxDBBackendListenerClient' in BackendListener: Backend Listener, check for a missing jar in your jmeter 'search_paths' and 'plugin_dependency_paths' properties
+2021-09-05 12:44:00,079 ERROR o.a.j.v.b.BackendListenerGui: Error getting argument list for org.apache.jmeter.visualizers.backend.graphite.GraphiteBackendListenerClient
+java.lang.ClassNotFoundException: rocks.nt.apm.jmeter.JMeterInfluxDBBackendListenerClient
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:440) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:587) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:467) ~[?:?]
+	at org.apache.jmeter.visualizers.backend.BackendListenerGui.createBackendListenerClient(BackendListenerGui.java:239) ~[ApacheJMeter_components.jar:5.4.1]
+	at org.apache.jmeter.visualizers.backend.BackendListenerGui.actionPerformed(BackendListenerGui.java:175) [ApacheJMeter_components.jar:5.4.1]
+	at javax.swing.JComboBox.fireActionEvent(JComboBox.java:1294) [?:?]
+	at javax.swing.JComboBox.setSelectedItem(JComboBox.java:619) [?:?]
+	at javax.swing.JComboBox.setSelectedIndex(JComboBox.java:654) [?:?]
+	at org.apache.jmeter.visualizers.backend.BackendListenerGui.clearGui(BackendListenerGui.java:316) [ApacheJMeter_components.jar:5.4.1]
+	at org.apache.jmeter.gui.tree.JMeterTreeModel.addComponent(JMeterTreeModel.java:161) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.tree.JMeterTreeModel.addSubTree(JMeterTreeModel.java:131) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.tree.JMeterTreeModel.addSubTree(JMeterTreeModel.java:131) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.tree.JMeterTreeModel.addSubTree(JMeterTreeModel.java:123) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.GuiPackage.addSubTree(GuiPackage.java:554) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.Load.insertLoadedTree(Load.java:199) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.Load.insertLoadedTree(Load.java:235) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.JMeter.startGui(JMeter.java:427) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.JMeter.start(JMeter.java:560) [ApacheJMeter_core.jar:5.4.1]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:254) [ApacheJMeter.jar:5.4.1]
+2021-09-05 12:44:00,082 ERROR o.a.j.v.b.BackendListenerGui: Error setting class: 'rocks.nt.apm.jmeter.JMeterInfluxDBBackendListenerClient' in BackendListener: Backend Listener, check for a missing jar in your jmeter 'search_paths' and 'plugin_dependency_paths' properties
+2021-09-05 12:44:00,091 ERROR o.a.j.v.b.BackendListenerGui: Error getting argument list for org.apache.jmeter.visualizers.backend.graphite.GraphiteBackendListenerClient
+java.lang.ClassNotFoundException: rocks.nt.apm.jmeter.JMeterInfluxDBBackendListenerClient
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:440) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:587) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:467) ~[?:?]
+	at org.apache.jmeter.visualizers.backend.BackendListenerGui.createBackendListenerClient(BackendListenerGui.java:239) ~[ApacheJMeter_components.jar:5.4.1]
+	at org.apache.jmeter.visualizers.backend.BackendListenerGui.actionPerformed(BackendListenerGui.java:175) [ApacheJMeter_components.jar:5.4.1]
+	at javax.swing.JComboBox.fireActionEvent(JComboBox.java:1294) [?:?]
+	at javax.swing.JComboBox.setSelectedItem(JComboBox.java:619) [?:?]
+	at javax.swing.JComboBox.setSelectedIndex(JComboBox.java:654) [?:?]
+	at org.apache.jmeter.visualizers.backend.BackendListenerGui.clearGui(BackendListenerGui.java:316) [ApacheJMeter_components.jar:5.4.1]
+	at org.apache.jmeter.gui.tree.JMeterTreeModel.addComponent(JMeterTreeModel.java:161) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.tree.JMeterTreeModel.addSubTree(JMeterTreeModel.java:131) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.tree.JMeterTreeModel.addSubTree(JMeterTreeModel.java:131) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.tree.JMeterTreeModel.addSubTree(JMeterTreeModel.java:123) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.GuiPackage.addSubTree(GuiPackage.java:554) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.Load.insertLoadedTree(Load.java:199) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.Load.insertLoadedTree(Load.java:235) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.JMeter.startGui(JMeter.java:427) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.JMeter.start(JMeter.java:560) [ApacheJMeter_core.jar:5.4.1]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:254) [ApacheJMeter.jar:5.4.1]
+2021-09-05 12:44:00,092 ERROR o.a.j.v.b.BackendListenerGui: Error setting class: 'rocks.nt.apm.jmeter.JMeterInfluxDBBackendListenerClient' in BackendListener: Backend Listener, check for a missing jar in your jmeter 'search_paths' and 'plugin_dependency_paths' properties
+2021-09-05 12:44:00,098 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2021-09-05 12:44:00,098 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2021-09-05 12:44:00,114 ERROR o.a.j.v.b.BackendListenerGui: Error getting argument list for org.apache.jmeter.visualizers.backend.graphite.GraphiteBackendListenerClient
+java.lang.ClassNotFoundException: rocks.nt.apm.jmeter.JMeterInfluxDBBackendListenerClient
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:440) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:587) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:467) ~[?:?]
+	at org.apache.jmeter.visualizers.backend.BackendListenerGui.createBackendListenerClient(BackendListenerGui.java:239) ~[ApacheJMeter_components.jar:5.4.1]
+	at org.apache.jmeter.visualizers.backend.BackendListenerGui.actionPerformed(BackendListenerGui.java:175) [ApacheJMeter_components.jar:5.4.1]
+	at javax.swing.JComboBox.fireActionEvent(JComboBox.java:1294) [?:?]
+	at javax.swing.JComboBox.setSelectedItem(JComboBox.java:619) [?:?]
+	at javax.swing.JComboBox.setSelectedIndex(JComboBox.java:654) [?:?]
+	at org.apache.jmeter.visualizers.backend.BackendListenerGui.clearGui(BackendListenerGui.java:316) [ApacheJMeter_components.jar:5.4.1]
+	at org.apache.jmeter.gui.tree.JMeterTreeModel.addComponent(JMeterTreeModel.java:161) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.tree.JMeterTreeModel.addSubTree(JMeterTreeModel.java:131) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.tree.JMeterTreeModel.addSubTree(JMeterTreeModel.java:131) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.tree.JMeterTreeModel.addSubTree(JMeterTreeModel.java:123) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.GuiPackage.addSubTree(GuiPackage.java:554) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.Load.insertLoadedTree(Load.java:199) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.Load.insertLoadedTree(Load.java:235) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.JMeter.startGui(JMeter.java:427) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.JMeter.start(JMeter.java:560) [ApacheJMeter_core.jar:5.4.1]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:254) [ApacheJMeter.jar:5.4.1]
+2021-09-05 12:44:00,115 ERROR o.a.j.v.b.BackendListenerGui: Error setting class: 'rocks.nt.apm.jmeter.JMeterInfluxDBBackendListenerClient' in BackendListener: Backend Listener, check for a missing jar in your jmeter 'search_paths' and 'plugin_dependency_paths' properties
+2021-09-05 12:44:00,122 ERROR o.a.j.v.b.BackendListenerGui: Error getting argument list for org.apache.jmeter.visualizers.backend.graphite.GraphiteBackendListenerClient
+java.lang.ClassNotFoundException: rocks.nt.apm.jmeter.JMeterInfluxDBBackendListenerClient
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:440) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:587) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:467) ~[?:?]
+	at org.apache.jmeter.visualizers.backend.BackendListenerGui.createBackendListenerClient(BackendListenerGui.java:239) ~[ApacheJMeter_components.jar:5.4.1]
+	at org.apache.jmeter.visualizers.backend.BackendListenerGui.actionPerformed(BackendListenerGui.java:175) [ApacheJMeter_components.jar:5.4.1]
+	at javax.swing.JComboBox.fireActionEvent(JComboBox.java:1294) [?:?]
+	at javax.swing.JComboBox.setSelectedItem(JComboBox.java:619) [?:?]
+	at javax.swing.JComboBox.setSelectedIndex(JComboBox.java:654) [?:?]
+	at org.apache.jmeter.visualizers.backend.BackendListenerGui.clearGui(BackendListenerGui.java:316) [ApacheJMeter_components.jar:5.4.1]
+	at org.apache.jmeter.gui.tree.JMeterTreeModel.addComponent(JMeterTreeModel.java:161) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.tree.JMeterTreeModel.addSubTree(JMeterTreeModel.java:131) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.tree.JMeterTreeModel.addSubTree(JMeterTreeModel.java:131) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.tree.JMeterTreeModel.addSubTree(JMeterTreeModel.java:123) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.GuiPackage.addSubTree(GuiPackage.java:554) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.Load.insertLoadedTree(Load.java:199) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.Load.insertLoadedTree(Load.java:235) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.JMeter.startGui(JMeter.java:427) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.JMeter.start(JMeter.java:560) [ApacheJMeter_core.jar:5.4.1]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:254) [ApacheJMeter.jar:5.4.1]
+2021-09-05 12:44:00,123 ERROR o.a.j.v.b.BackendListenerGui: Error setting class: 'rocks.nt.apm.jmeter.JMeterInfluxDBBackendListenerClient' in BackendListener: Backend Listener, check for a missing jar in your jmeter 'search_paths' and 'plugin_dependency_paths' properties
+2021-09-05 12:44:00,130 ERROR o.a.j.v.b.BackendListenerGui: Error getting argument list for org.apache.jmeter.visualizers.backend.graphite.GraphiteBackendListenerClient
+java.lang.ClassNotFoundException: rocks.nt.apm.jmeter.JMeterInfluxDBBackendListenerClient
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:440) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:587) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:467) ~[?:?]
+	at org.apache.jmeter.visualizers.backend.BackendListenerGui.createBackendListenerClient(BackendListenerGui.java:239) ~[ApacheJMeter_components.jar:5.4.1]
+	at org.apache.jmeter.visualizers.backend.BackendListenerGui.actionPerformed(BackendListenerGui.java:175) [ApacheJMeter_components.jar:5.4.1]
+	at javax.swing.JComboBox.fireActionEvent(JComboBox.java:1294) [?:?]
+	at javax.swing.JComboBox.setSelectedItem(JComboBox.java:619) [?:?]
+	at javax.swing.JComboBox.setSelectedIndex(JComboBox.java:654) [?:?]
+	at org.apache.jmeter.visualizers.backend.BackendListenerGui.clearGui(BackendListenerGui.java:316) [ApacheJMeter_components.jar:5.4.1]
+	at org.apache.jmeter.gui.tree.JMeterTreeModel.addComponent(JMeterTreeModel.java:161) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.tree.JMeterTreeModel.addSubTree(JMeterTreeModel.java:131) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.tree.JMeterTreeModel.addSubTree(JMeterTreeModel.java:131) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.tree.JMeterTreeModel.addSubTree(JMeterTreeModel.java:123) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.GuiPackage.addSubTree(GuiPackage.java:554) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.Load.insertLoadedTree(Load.java:199) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.Load.insertLoadedTree(Load.java:235) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.JMeter.startGui(JMeter.java:427) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.JMeter.start(JMeter.java:560) [ApacheJMeter_core.jar:5.4.1]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:254) [ApacheJMeter.jar:5.4.1]
+2021-09-05 12:44:00,130 ERROR o.a.j.v.b.BackendListenerGui: Error setting class: 'rocks.nt.apm.jmeter.JMeterInfluxDBBackendListenerClient' in BackendListener: Backend Listener, check for a missing jar in your jmeter 'search_paths' and 'plugin_dependency_paths' properties

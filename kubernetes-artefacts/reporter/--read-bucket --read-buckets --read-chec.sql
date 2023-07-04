@@ -1,0 +1,4 @@
+--read-bucket --read-buckets --read-checks --read-dashboards --read-dbrps	--read-notificationEndpoints --read-notificationRules --read-orgs --read-tasks	--read-telegrafs --read-user		
+-t	--token	API token	string	INFLUX_TOKEN
+-u	--user	Username	string	
+--write-bucket --write-buckets --write-checks --write-dashboards --write-dbrps	--write-notificationEndpoints --write-notificationRules	--write-orgs --write-tasks	--write-telegrafs --write-user	

@@ -1,0 +1,89 @@
+Name:           jmeter-slave-fb797559b-gpnzm
+Namespace:      orderflow-8
+Priority:       0
+Node:           <none>
+Labels:         jmeter_mode=slave
+                namespace=orderflow-8
+                pod-template-hash=fb797559b
+Annotations:    kubernetes.io/psp: eks.privileged
+Status:         Pending
+IP:             
+IPs:            <none>
+Controlled By:  ReplicaSet/jmeter-slave-fb797559b
+Containers:
+  jmslave:
+    Image:       625194385885.dkr.ecr.eu-west-3.amazonaws.com/jmeterstresstest/jmeter-slave:latest
+    Ports:       1099/TCP, 50000/TCP, 1007/TCP, 5005/TCP, 8778/TCP
+    Host Ports:  0/TCP, 0/TCP, 0/TCP, 0/TCP, 0/TCP
+    Args:
+      /bin/bash
+      -c
+      --
+      /fileupload/upload > /fileupload.log 2>&1
+    Limits:
+      cpu:     1
+      memory:  1Gi
+    Requests:
+      cpu:     1
+      memory:  1Gi
+    Environment:
+      AWS_DEFAULT_REGION:           eu-west-3
+      AWS_REGION:                   eu-west-3
+      AWS_ROLE_ARN:                 arn:aws:iam::625194385885:role/eksctl-jmeterstresstest-addon-iamserviceacco-Role1-WW4LQ4N18MBP
+      AWS_WEB_IDENTITY_TOKEN_FILE:  /var/run/secrets/eks.amazonaws.com/serviceaccount/token
+    Mounts:
+      /test-output from test-output-dir (rw)
+      /var/run/secrets/eks.amazonaws.com/serviceaccount from aws-iam-token (ro)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-zlfcx (ro)
+  telegraf:
+    Image:       docker.io/telegraf:1.19-alpine
+    Ports:       8125/TCP, 8092/TCP, 8094/TCP
+    Host Ports:  0/TCP, 0/TCP, 0/TCP
+    Limits:
+      cpu:     500m
+      memory:  30Mi
+    Requests:
+      cpu:     500m
+      memory:  30Mi
+    Environment:
+      AWS_DEFAULT_REGION:           eu-west-3
+      AWS_REGION:                   eu-west-3
+      AWS_ROLE_ARN:                 arn:aws:iam::625194385885:role/eksctl-jmeterstresstest-addon-iamserviceacco-Role1-WW4LQ4N18MBP
+      AWS_WEB_IDENTITY_TOKEN_FILE:  /var/run/secrets/eks.amazonaws.com/serviceaccount/token
+    Mounts:
+      /etc/telegraf/telegraf.conf from telegraf-config-map (rw,path="telegraf.conf")
+      /test-output from test-output-dir (rw)
+      /var/run/secrets/eks.amazonaws.com/serviceaccount from aws-iam-token (ro)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-zlfcx (ro)
+Conditions:
+  Type           Status
+  PodScheduled   False 
+Volumes:
+  aws-iam-token:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  86400
+  telegraf-config-map:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      telegraf-config-map
+    Optional:  false
+  test-output-dir:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  kube-api-access-zlfcx:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Guaranteed
+Node-Selectors:              <none>
+Tolerations:                 jmeter_slave:NoSchedule op=Exists
+                             node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason             Age                  From                Message
+  ----     ------             ----                 ----                -------
+  Normal   NotTriggerScaleUp  4m14s                cluster-autoscaler  pod didn't trigger scale-up:
+  Warning  FailedScheduling   17s (x6 over 4m18s)  default-scheduler   0/6 nodes are available: 1 Insufficient cpu, 5 node(s) didn't match Pod's node affinity/selector.
+

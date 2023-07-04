@@ -1,0 +1,146 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: jmeterstresstest
+  region: eu-west-3
+
+iam:
+  withOIDC: true
+
+ # serviceAccounts:
+ # - metadata:
+ #     name: afriex-jmeter
+ #     # if no namespace is set, "default" will be used;
+ #     # the namespace will be created if it doesn't exist already
+ #     namespace: afriex-jmeter-ns
+ #     labels: {aws-usage: "application"}
+ #   attachPolicyARNs:
+ #   - "arn:aws:iam::625194385885:policy/afriex-eks-jmeter-policy"
+
+
+
+managedNodeGroups:
+  - name: jmeter-slaves-v1
+    labels: { jmeter_mode : slaves } 
+    tags:
+      k8s.io/cluster-autoscaler/node-template/label/jmeter_mode: slaves
+      k8s.io/cluster-autoscaler/node-template/taint/jmeter_slave: "true:NoSchedule"
+      # EC2 tags required for cluster-autoscaler auto-discovery
+      k8s.io/cluster-autoscaler/enabled: "true"
+      k8s.io/cluster-autoscaler/jmeterstresstest: "owned"
+    minSize: 1
+    desiredCapacity: 1
+    maxSize: 100
+    volumeSize: 50
+    volumeType: gp2
+    iam:
+      withAddonPolicies:
+        autoScaler: true
+        imageBuilder: true
+        externalDNS: true
+        ebs: true
+    instanceTypes: ["m5.8xlarge","m5.2xlarge","m5d.8xlarge","c5n.4xlarge","c5.2xlarge","c5.18xlarge","r6gd.16xlarge","c5n.2xlarge","m5d.4xlarge"]
+    spot: true
+  
+  - name: jmeter-master
+    labels: { jmeter_mode : master }
+    tags:
+      k8s.io/cluster-autoscaler/node-template/label/jmeter_mode: master
+      k8s.io/cluster-autoscaler/node-template/taint/jmeter_master: "true:NoSchedule"
+      k8s.io/cluster-autoscaler/enabled: "true"
+      k8s.io/cluster-autoscaler/jmeterstresstest: "owned"
+    minSize: 1
+    desiredCapacity: 1
+    maxSize: 25
+    volumeSize: 50
+    volumeType: gp2
+    instanceTypes: ["m5.8xlarge","m5.2xlarge","m5d.8xlarge","c5n.4xlarge","c5.2xlarge","c5.18xlarge","r6gd.16xlarge","c5n.2xlarge","m5d.4xlarge"]
+    spot: true
+    iam:
+      withAddonPolicies:
+        autoScaler: true
+        imageBuilder: true
+        externalDNS: true
+        ebs: true
+
+  - name: grafana-v5
+    labels: { report : grafana }
+    tags:
+      k8s.io/cluster-autoscaler/node-template/label/report: grafana
+      k8s.io/cluster-autoscaler/node-template/taint/grafana: "true:NoSchedule"
+    minSize: 1
+    maxSize: 1
+    volumeSize: 50
+    volumeType: gp2
+    iam:
+      withAddonPolicies:
+        imageBuilder: true
+        autoScaler: true
+        externalDNS: true
+        ebs: true
+    instanceType: t2.medium
+    availabilityZones: ["eu-west-3a"]
+
+  - name: influxdb-v2
+    labels: { report : influxdb }
+    tags:
+      k8s.io/cluster-autoscaler/node-template/label/report: influxdb
+      k8s.io/cluster-autoscaler/node-template/taint/influxdb: "true:NoSchedule"
+    minSize: 1
+    maxSize: 2
+    volumeSize: 50
+    volumeType: gp2
+    iam:
+      withAddonPolicies:
+        imageBuilder: true
+        autoScaler: true
+        externalDNS: true
+        ebs: true
+    instanceType: t2.medium
+    availabilityZones: ["eu-west-3a"]
+
+  - name: admin-controller-v4
+    labels: { control : admin }
+    tags:
+      k8s.io/cluster-autoscaler/node-template/label/control: admin
+      k8s.io/cluster-autoscaler/node-template/taint/admin: "true:NoSchedule"
+    minSize: 1
+    maxSize: 1
+    volumeSize: 50
+    volumeType: gp2
+    ssh:
+      allow: true
+      publicKeyName: 'loadtest-controller'
+    iam:
+      withAddonPolicies:
+        imageBuilder: true
+        autoScaler: true
+        externalDNS: true
+        ebs: true
+    instanceType: t2.medium
+
+  - name: management
+    labels: { management : admin }
+    minSize: 1
+    maxSize: 4
+    volumeSize: 50
+    volumeType: gp2
+    ssh:
+      allow: true
+      publicKeyName: 'loadtest-controller'
+    iam:
+      withAddonPolicies:
+        imageBuilder: true
+        autoScaler: true
+        externalDNS: true
+        ebs: true
+    instanceType: t2.medium
+cloudWatch:
+  clusterLogging:
+    # enable specific types of cluster control plane logs
+    enableTypes: ["all"]
+    # all supported types: "api", "audit", "authenticator", "controllerManager", "scheduler"
+    # supported special values: "*" and "all"
+
+

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b2a3f269-422b-4b54-aa94-f22d0dc9e960" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../admin/.idea/admin.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fileupload/fileupload.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThingsToConsider.md" beforeDir="false" afterPath="$PROJECT_DIR$/../ThingsToConsider.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/bin/admin" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/bin/admin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/cmd/ugcupload/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/cmd/ugcupload/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/configs/jmeter.properties.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/configs/jmeter.properties.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/configs/upload.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/configs/upload.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/internal/pkg/aws/s3.go" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/internal/pkg/aws/s3.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/internal/pkg/cluster/cluster.go" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/internal/pkg/cluster/cluster.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/internal/pkg/controller/controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/internal/pkg/controller/controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/internal/pkg/helper/bandwidth.go" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/internal/pkg/helper/bandwidth.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/internal/pkg/jmeter/jmeter.go" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/internal/pkg/jmeter/jmeter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/internal/pkg/kubernetes/admin/admin.go" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/internal/pkg/kubernetes/admin/admin.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/internal/pkg/kubernetes/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/internal/pkg/kubernetes/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/internal/pkg/redis/redis.go" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/internal/pkg/redis/redis.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/internal/pkg/types/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/internal/pkg/types/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/internal/pkg/ugcupload/fileoperatiions.go" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/internal/pkg/ugcupload/fileoperatiions.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/internal/pkg/validate/validate.go" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/internal/pkg/validate/validate.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/jmeter.properties.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/../config/jmeter.properties.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/base/conf/user.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/base/conf/user.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/base/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/base/deploy.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/control/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/control/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/control/bin/gen-env.py" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/control/bin/gen-env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/control/conf/user.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/control/conf/user.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/control/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/control/deploy.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/control/entry.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/control/entry.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/control/etc/ugcupload/loadtest.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/master/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/master/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/master/bin/check_if_ended.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/master/bin/check_if_ended.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/master/bin/load_test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/master/bin/load_test.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/master/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/master/deploy.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/slave/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/slave/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/slave/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/slave/deploy.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/slave/user.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/slave/user.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fileupload/cmd/ugcupload/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../fileupload/cmd/ugcupload/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fileupload/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../fileupload/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fileupload/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../fileupload/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fileupload/internal/pkg/ugcupload/fileoperatiions.go" beforeDir="false" afterPath="$PROJECT_DIR$/../fileupload/internal/pkg/ugcupload/fileoperatiions.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/ugcupload/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/ugcupload/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kubernetes-artefacts/cluster/cluster.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../kubernetes-artefacts/cluster/cluster.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kubernetes-artefacts/cluster/create-cluster.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../kubernetes-artefacts/cluster/create-cluster.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kubernetes-artefacts/cluster/i-am-policy-control.json" beforeDir="false" afterPath="$PROJECT_DIR$/../kubernetes-artefacts/cluster/i-am-policy-control.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kubernetes-artefacts/cluster/i-am-policy-jmeter.json" beforeDir="false" afterPath="$PROJECT_DIR$/../kubernetes-artefacts/cluster/i-am-policy-jmeter.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kubernetes-artefacts/cluster/un-do.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../kubernetes-artefacts/cluster/un-do.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kubernetes-artefacts/control/add-control-to-cluster.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../kubernetes-artefacts/control/add-control-to-cluster.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kubernetes-artefacts/control/clusterolebinding.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../kubernetes-artefacts/control/clusterolebinding.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kubernetes-artefacts/control/control.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../kubernetes-artefacts/control/control.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kubernetes-artefacts/control/un-do.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../kubernetes-artefacts/control/un-do.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kubernetes-artefacts/reporter/chronograf-pv.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../kubernetes-artefacts/reporter/chronograf-pv.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kubernetes-artefacts/reporter/chronograf.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../kubernetes-artefacts/reporter/chronograf.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kubernetes-artefacts/reporter/configure-reporting.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../kubernetes-artefacts/reporter/configure-reporting.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kubernetes-artefacts/reporter/create-report-env.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../kubernetes-artefacts/reporter/create-report-env.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kubernetes-artefacts/reporter/grafana-pdb.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../kubernetes-artefacts/reporter/grafana-pdb.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kubernetes-artefacts/reporter/grafana-pv.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../kubernetes-artefacts/reporter/grafana-pv.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kubernetes-artefacts/reporter/grafana.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../kubernetes-artefacts/reporter/grafana.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kubernetes-artefacts/reporter/influxdb-pv.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../kubernetes-artefacts/reporter/influxdb-pv.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kubernetes-artefacts/reporter/influxdb.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../kubernetes-artefacts/reporter/influxdb.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kubernetes-artefacts/reporter/un-do.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../kubernetes-artefacts/reporter/un-do.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kubernetes-artefacts/tenant/add-tennat-to-cluster.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../kubernetes-artefacts/tenant/add-tennat-to-cluster.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kubernetes-artefacts/tenant/create-serviceaccount.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../kubernetes-artefacts/tenant/create-serviceaccount.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kubernetes-artefacts/tenant/delete-serviceaccount.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../kubernetes-artefacts/tenant/delete-serviceaccount.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kubernetes-artefacts/tenant/jmeter-master.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../kubernetes-artefacts/tenant/jmeter-master.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kubernetes-artefacts/tenant/jmeter-master.yaml.template" beforeDir="false" afterPath="$PROJECT_DIR$/../kubernetes-artefacts/tenant/jmeter-master.yaml.template" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kubernetes-artefacts/tenant/jmeter-slaves.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../kubernetes-artefacts/tenant/jmeter-slaves.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kubernetes-artefacts/tenant/jmeter-slaves.yaml.template" beforeDir="false" afterPath="$PROJECT_DIR$/../kubernetes-artefacts/tenant/jmeter-slaves.yaml.template" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kubernetes-artefacts/tenant/un-do.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../kubernetes-artefacts/tenant/un-do.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kubernetes-util/scale-node-group.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../kubernetes-util/scale-node-group.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scripts/tunnel-good.py" beforeDir="false" afterPath="$PROJECT_DIR$/../scripts/tunnel-good.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/upload/upload.jmx" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/upload/upload.jmx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-admin/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-admin/src/Main/Chronograf/Chronograf.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin/src/Main/Chronograf/Chronograf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-admin/src/Main/Grafana/Graphana.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin/src/Main/Grafana/Graphana.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-admin/src/Main/Jmeter/Create/Create.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin/src/Main/Jmeter/Create/Create.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-admin/src/Main/Jmeter/Jmeter.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin/src/Main/Jmeter/Jmeter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-admin/src/Main/Jmeter/Monitor/NodeInformation/NodeInformation.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin/src/Main/Jmeter/Monitor/NodeInformation/NodeInformation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-admin/src/Main/Jmeter/Monitor/StopTest/Safely/Safely.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin/src/Main/Jmeter/Monitor/StopTest/Safely/Safely.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-admin/src/Main/Jmeter/Monitor/StopTest/StopTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin/src/Main/Jmeter/Monitor/StopTest/StopTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-admin/src/Main/Jmeter/Monitor/TenantDeletion/TenantDeletion.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin/src/Main/Jmeter/Monitor/TenantDeletion/TenantDeletion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-admin/src/Main/Jmeter/Monitor/TestStatus/TestStatus.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin/src/Main/Jmeter/Monitor/TestStatus/TestStatus.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-admin/src/Main/Jmeter/Report/GenerateGraph/GenerateGraph.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin/src/Main/Jmeter/Report/GenerateGraph/GenerateGraph.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-admin/src/Main/Jmeter/Report/GenerateGraph/ReportList/ReportList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin/src/Main/Jmeter/Report/GenerateGraph/ReportList/ReportList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-admin/src/Main/Jmeter/Report/Report.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin/src/Main/Jmeter/Report/Report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-admin/src/Main/Jmeter/Report/SlaveLogFiles/SlaveLogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin/src/Main/Jmeter/Report/SlaveLogFiles/SlaveLogs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-admin/src/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin/src/Main/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-admin/src/Main/Weavescope/WeaveScope.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin/src/Main/Weavescope/WeaveScope.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-admin/src/MyProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin/src/MyProvider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-admin/src/provider/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin/src/provider/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-admin/src/redux/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin/src/redux/actionTypes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-admin/src/redux/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin/src/redux/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-admin/src/redux/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin/src/redux/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-admin/src/redux/reducers/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin/src/redux/reducers/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-admin/src/redux/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin/src/redux/selectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-admin/src/sagas/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin/src/sagas/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-admin/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-scripts/gen-report.py" beforeDir="false" afterPath="$PROJECT_DIR$/../test-scripts/gen-report.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="GOROOT" url="file:///opt/homebrew/Cellar/go/1.17/libexec" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1yMDIVQU9aOoegtcXbUSEOyAWdH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.formatter.settings.were.checked" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b2a3f269-422b-4b54-aa94-f22d0dc9e960" name="Changes" comment="" />
+      <created>1636548123942</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636548123942</updated>
+      <workItem from="1636548126827" duration="1496000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+</project>

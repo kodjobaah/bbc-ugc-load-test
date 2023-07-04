@@ -1,0 +1,43 @@
+2021-09-14 12:50:29,469 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2021-09-14 12:50:29,490 INFO o.a.j.JMeter: Loading user properties from: /opt/homebrew/Cellar/jmeter/5.4.1/libexec/bin/user.properties
+2021-09-14 12:50:29,491 INFO o.a.j.JMeter: Loading system properties from: /opt/homebrew/Cellar/jmeter/5.4.1/libexec/bin/system.properties
+2021-09-14 12:50:29,496 INFO o.a.j.JMeter: Copyright (c) 1998-2021 The Apache Software Foundation
+2021-09-14 12:50:29,496 INFO o.a.j.JMeter: Version 5.4.1
+2021-09-14 12:50:29,497 INFO o.a.j.JMeter: java.version=17
+2021-09-14 12:50:29,497 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2021-09-14 12:50:29,497 INFO o.a.j.JMeter: os.name=Mac OS X
+2021-09-14 12:50:29,497 INFO o.a.j.JMeter: os.arch=aarch64
+2021-09-14 12:50:29,497 INFO o.a.j.JMeter: os.version=11.5.2
+2021-09-14 12:50:29,497 INFO o.a.j.JMeter: file.encoding=UTF-8
+2021-09-14 12:50:29,497 INFO o.a.j.JMeter: java.awt.headless=null
+2021-09-14 12:50:29,497 INFO o.a.j.JMeter: Max memory     =1073741824
+2021-09-14 12:50:29,497 INFO o.a.j.JMeter: Available Processors =8
+2021-09-14 12:50:29,507 INFO o.a.j.JMeter: Default Locale=English (EN)
+2021-09-14 12:50:29,507 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2021-09-14 12:50:29,507 INFO o.a.j.JMeter: JMeterHome=/opt/homebrew/Cellar/jmeter/5.4.1/libexec
+2021-09-14 12:50:29,507 INFO o.a.j.JMeter: user.dir  =/Users/kodjo/workspace/afriex-jmeter-testbench/admin
+2021-09-14 12:50:29,507 INFO o.a.j.JMeter: PWD       =/Users/kodjo/workspace/afriex-jmeter-testbench/admin
+2021-09-14 12:50:29,512 INFO o.a.j.JMeter: IP: 192.168.1.57 Name: kodjos-MBP.broadband FullName: kodjos-mbp.broadband
+2021-09-14 12:50:29,866 INFO o.a.j.JMeter: Setting LAF to: laf:javax.swing.plaf.nimbus.NimbusLookAndFeel
+2021-09-14 12:50:31,509 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2021-09-14 12:50:32,416 INFO o.j.r.JARSourceHTTP: Requesting https://jmeter-plugins.org/repo/?installID=mac_os_x-b1395ccacad61c29f3d385ab4dcd50f3-gui
+2021-09-14 12:50:33,722 INFO o.j.r.PluginManager: Plugins Status: [jpgc-casutg=2.9, jpgc-plugins-manager=1.6, jpgc-csvars=0.1, jmeter-core=5.4.1, jmeter-ftp=5.4.1, jmeter-http=5.4.1, jmeter-jdbc=5.4.1, jmeter-jms=5.4.1, jmeter-junit=5.4.1, jmeter-java=5.4.1, jmeter-ldap=5.4.1, jmeter-mail=5.4.1, jmeter-mongodb=5.4.1, jmeter-native=5.4.1, jmeter-tcp=5.4.1, jmeter-components=5.4.1]
+2021-09-14 12:51:01,159 INFO o.a.j.s.FileServer: Default base='/Users/kodjo/workspace/afriex-jmeter-testbench/admin'
+2021-09-14 12:51:01,167 INFO o.a.j.g.a.Load: Loading file: /Users/kodjo/workspace/afriex-jmeter-testbench/kubernetes-artefacts/reporter/HTTP Request.jmx
+2021-09-14 12:51:01,167 INFO o.a.j.s.FileServer: Set new base='/Users/kodjo/workspace/afriex-jmeter-testbench/kubernetes-artefacts/reporter'
+2021-09-14 12:51:01,308 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2021-09-14 12:51:01,313 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2021-09-14 12:51:01,314 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2021-09-14 12:51:01,315 INFO o.a.j.s.SaveService: Loading file: /Users/kodjo/workspace/afriex-jmeter-testbench/kubernetes-artefacts/reporter/HTTP Request.jmx
+2021-09-14 12:51:01,382 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-09-14 12:51:01,382 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-09-14 12:51:01,382 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-09-14 12:51:01,383 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-09-14 12:51:01,383 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2021-09-14 12:51:01,383 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2021-09-14 12:51:01,389 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2021-09-14 12:51:01,389 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2021-09-14 12:51:01,389 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2021-09-14 12:51:01,389 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2021-09-14 12:51:01,603 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2021-09-14 12:51:01,663 INFO o.a.j.s.FileServer: Set new base='/Users/kodjo/workspace/afriex-jmeter-testbench/kubernetes-artefacts/reporter'

@@ -1,0 +1,15 @@
+apiVersion: "v1"
+kind: "PersistentVolume"
+metadata:
+  name: "influxdb-pv" 
+spec:
+  storageClassName: influx-db-sc
+  capacity:
+    storage: "80Gi" 
+  accessModes:
+    - "ReadWriteOnce"
+  persistentVolumeReclaimPolicy: Retain   
+  awsElasticBlockStore: 
+    fsType: "ext4" 
+    volumeID: "vol-02a0fc3d8c239a534"
+
